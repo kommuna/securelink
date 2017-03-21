@@ -8,6 +8,7 @@ Simple PHP class for create and validate "signed" HTTP links
 * $mask -- mask in octet form e.g. "255.255.0.0"
 * $expiry -- when this signature is expired (epoch time in future)
 * $secret -- secret to use to sign
+
 Will return md5 signature (binary) based on instantiated $signatee or null on error populating SecureLink::$errno with corresponding error number.
 
 `SecureLink::verify($signatee, $ip, $mask, $expiry, $secret, $signature)`
@@ -17,6 +18,7 @@ Will return md5 signature (binary) based on instantiated $signatee or null on er
 * $expiry -- when this signature is expired (epoch time in future)
 * $secret -- secret to use to sign
 * $signature -- signature to compare with (binary)
+
 Will return true or false on error populating SecureLink::$errno with corresponding error number.
 
 `SecureLink::err()`
