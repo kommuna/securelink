@@ -1,0 +1,13 @@
+{
+    "name": "kommuna/securelink",
+    "description": "Simple PHP class for create and validate \"signed\" HTTP links",
+    "type": "library",
+    "license": "unlicense",
+    "authors": [
+    ],
+    "minimum-stability": "stable",
+    "require": {},
+    "autoload": {
+      "psr-4": {"kommuna\\securelink\\": "."}
+    }
+}
